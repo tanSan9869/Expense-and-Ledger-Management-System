@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: elsystem
+
+  datasource:
+    url: jdbc:postgresql://aws-1-ap-southeast-2.pooler.supabase.com:6543/postgres?sslmode=require&preferQueryMode=simple
+    username: postgres.wehylcadujjtyltdwlui
+    password: iwFJxLohJ7inPV71
+    driver-class-name: org.postgresql.Driver
+
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: true
+      hibernate:
+        ddl-auto: validate
+      properties:
+        hibernate:
+          format_sql: true
+
+app:
+  jwt:
+    # 🎯 Secure 32-character key (256-bit) generated for your application:
+    secret: "eK9xP2vM7sQ4wB1zN8rD5fG2hJ6kL3mN"
+    expiration-ms: 86400000
